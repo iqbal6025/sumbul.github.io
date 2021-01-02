@@ -1,0 +1,309 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    height:200vh;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: .5fr  2fr .5fr;
+    grid-template-areas: 
+      "nav nav"
+      "sidebar contain1"
+      "footer footer"
+      ;
+      grid-gap:1px;
+      
+}
+#logo{
+    text-align: center;
+}
+
+#brand{
+    color:whitesmoke;
+    font-size: 40px;
+    
+}
+nav{
+    background-color:cornflowerblue;
+    grid-area: nav;
+}
+#btn{
+    display: none;
+}
+span{
+    color:greenyellow;
+    
+}
+#brand-part{
+    font-size: 15px;
+    color:whitesmoke;
+   
+}
+#btn1{
+    display: none;
+}
+.sidebar{
+    background-color: grey;
+    grid-area: sidebar;
+    
+}
+#sidebar_content{
+    margin:20px 0px;
+}
+#sidebar_content a{
+    text-decoration: none;
+}
+#sidebar_content li{
+    list-style: square;
+    padding:2px 10px;
+    font-size: 15px;
+   
+}
+#sidebar_content  a li{
+    color:black;
+}
+#sidebar_content .Box1 li:hover{
+    background-color: orangered;
+}
+#sidebar_content .Box2 li:hover{
+    background-color: white;
+}
+#sidebar_content .Box3 li:hover{
+    background-color:greenyellow ;
+}
+
+p,li{
+    text-align: justify;
+}
+.contain1{
+    background-color: white;
+    grid-area:contain1;
+    border-bottom:1px solid grey;
+    padding:20px 10px;
+}
+.contain1 li{
+    list-style:square;
+    
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination #left{
+      margin-right:100px;
+      color:black;
+}
+.pagination #right{
+    color:black;
+}
+
+#up_arrow{
+    display:none;
+    position:fixed;
+    bottom:50px;
+    cursor: pointer;
+    right:30px;
+    color:gray;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+    color:gray;
+}
+footer{
+    background-color: rgb(36, 35, 35);
+    grid-area:footer;
+}
+@media screen and (min-width:761px) and (max-width:1250px){
+    body{
+        display: grid;
+        height:200vh;
+        grid-template-columns: 0.3fr 1fr;
+        grid-template-rows: .5fr  2fr .5fr;
+        grid-template-areas: 
+          "nav nav"
+          "sidebar contain1"
+          "footer footer"
+          ;
+          grid-gap:1px;
+          
+    }
+    #sidebar_content a li{
+        font-size: 13px;
+    }
+
+}
+@media screen and (min-width:650px) and (max-width:760px){
+    body{
+        display: grid;
+        height:200vh;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: .5fr  2fr .5fr;
+        grid-template-areas: 
+          "nav nav"
+          "sidebar contain1"
+          "footer footer"
+          ;
+          grid-gap:1px;
+          
+    }
+    #sidebar_content a li{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    body{
+        display: grid;
+        height:450vh;
+        grid-template-columns:1fr;
+        grid-template-rows: .4fr 0fr 4fr .5fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "contain1"
+        "footer"
+        ;
+        grid-gap:1px;
+    }
+
+    #study{
+        color:black;
+      
+    }
+    #brand{
+        font-size: 35px;
+        position: relative;
+        top:0px;
+        font-family: montserrat,sans-serif;
+       
+    }
+    #brand-part{
+        position: relative;
+        top:5px;
+        font-size:15px;
+        font-family: montserrat,sans-serif;
+    }
+    #btn{
+        display:block;
+        color:white;
+        cursor: pointer; 
+        text-align: center;
+    }
+    #btn1{
+        color:white;
+        cursor:pointer;
+        text-align: center;
+    }
+   #side{  
+       
+       transition: height .5s;
+   }
+   p,li{
+       text-align: justify;
+   }
+   #sidebar_content{
+       display:none;
+       height: 160px;
+       font-size: 13px;
+       flex-direction: row;
+       margin:15px 5px;
+   }
+  
+   #sidebar_content div a li{
+           list-style: none;
+           padding:0px 5px;
+   }
+   .Box1 li:hover{
+       background-color: orangered;
+       font-weight: bold;
+       color:black;
+   }
+   .Box2 li:hover{
+       background-color: orchid;
+       font-weight: bold;
+       color:black;
+   }
+   .Box3 li:hover{
+       background-color: palegreen;
+       color:black;
+       font-weight: bold;
+   }
+   #sidebar_content div a{
+       text-decoration: none;
+       color:white;
+   }
+   .Box1{
+       flex:4;
+   }
+   .Box2{
+       flex:4;
+   }
+   .Box3{
+       flex:4;
+   }
+   
+ 
+   
+  
+}
+
+@media screen and (orientation:landscape){
+
+    #sidebar_content div a li{
+               font-size: 14px;
+               color:white;
+    }
+    #sidebar_content div a li:hover{
+        color:black;
+        font-weight: 450;
+    }
+}
+
+@media screen and (max-width:483px) {
+    body{
+        display: grid;
+        height:450vh;
+        grid-template-columns:1fr;
+        grid-template-rows: .4fr 0fr 5fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "contain1"
+        "footer"
+        ;
+        grid-gap:1px;
+    }
+
+    #sidebar_content{
+    display:none;
+    flex-direction: column;
+    font-size: 15px;
+    
+}
+  #sidebar_content div a li{
+      margin:1px 0px;
+      border-bottom:1px solid black;
+      text-align: center;
+  }
+   .Box1 li:hover{
+       background-color:orange;
+       color:black;
+       font-weight: bold;
+   }
+   .Box2 li:hover{
+       background-color:white;
+       color:black;
+       font-weight: bold;
+   }
+   .Box3 li:hover{
+       background-color:yellowgreen;
+       color:black;
+       font-weight: bold;
+   }
+
+}

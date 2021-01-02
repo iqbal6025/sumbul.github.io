@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href='python.css' rel='stylesheet' >
+    <script src="https://kit.fontawesome.com/2edd0b3374.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        window.addEventListener("orientationchange", function() {
+          up();
+            }, true);
+    </script>
+    <script src="myscript.js">
+    </script>
+    <nav>
+        <div id="logo">
+        <i id='study' class="fas fa-graduation-cap fa-4x"></i>
+        <h1 id='brand'><span>Sum</span>bul</h1>
+        <h3 id='brand-part'>SIMPLE EASY LEARNING</h3>
+        </div>
+    </nav>
+    <div id='side' class="sidebar">
+        <i id='btn' onclick='down()' class="fas fa-angle-down fa-2x"></i>
+        <i id='btn1' onclick='up()' class="fas fa-angle-up fa-2x"></i>
+        <div id='sidebar_content'>
+            <div class="Box1">
+                <a onclick='sidebar_data("page1")' href='#'><li>Python - Home</li></a>
+                <a onclick='sidebar_data("page2")' href="#"><li>Python - Overview</li></a>
+                <a href="#"><li>Python - Basic Syntax</li></a>
+                <a onclick='sidebar_data("page4")' href='#'><li>Python - Variable Types</li></a>
+                <a href="#"><li>Python - Basic Operators</li></a>
+                <a href="#"><li>Python - Decision </li></a>
+            </div>
+            <div class="Box2">
+                <a href="#"><li>Python - Loops</li></a>
+                <a href="#"><li>Python - Numbers</li></a>
+                <a href="#"><li>Python - Strings</li></a>
+                <a href='#'><li>Python - Lists</li></a>
+                <a href="#"><li>Python - Tuples</li></a>
+                <a href='#'><li>Python - Dictionary</li></a>
+            </div>
+            <div class="Box3">
+                <a href="#"><li>Python - Date & Time</li></a>
+                <a href="#"><li>Python - Functions</li></a>
+                <a href="#"><li>Python - Modules</li></a>
+                <a href="#"><li>Python - Files I/O</li></a>
+                <a href="#"><li>Python - Exceptions</li></a>
+            </div>
+        </div>
+    </div>
+    <div class="contain1" onclick='up()'>
+        <div id='page1' class="container col-md-9 offset-md-1">
+            <h4 id='heading'>Python - Home</h4>
+            <p class='text-justify'><b>Python</b> is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on <b>Python programming</b> language.</p>
+            <h6>Why to Learn Python?</h6>
+            <p class='text-justify'><b>Python</b> is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+            <p class='text-justify'><b>Python</b> is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:</p>      
+            <ul>
+                <li><b>Python is Interpreted</b> − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</li>
+                <li><b>Python is Interactive</b> − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+                <li><b>Python is Object-Oriented</b> − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li>
+                <li><b>Python is a Beginner's Language</b> − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</li>
+            </ul>
+            <h6>Characteristics of Python</h6>
+            <p>Following are important characteristics of <b>Python Programming</b> −</p>
+            <ul>
+                <li>It supports functional and structured programming methods as well as OOP.</li>
+                <li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+                <li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+                <li>It supports automatic garbage collection.</li>
+                <li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+            </ul>
+            <h6>Applications of Python</h6>
+            <p>As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:</p>
+            <ul>
+                <li><b>Easy-to-learn</b> − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</li>
+                <li><b>Easy-to-read</b> − Python code is more clearly defined and visible to the eyes.</li>
+                <li><b>Easy-to-maintain</b> − Python's source code is fairly easy-to-maintain. </li>
+                <li><b>A broad standard library</b> − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.</li>
+                <li><b>Interactive Mode</b> − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.</li>
+                <li><b>Portable</b> − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</li>
+                <li><b>Extendable</b> − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.</li>
+                <li><b>Databases</b> − Python provides interfaces to all major commercial databases.</li>
+                <li><b>GUI Programming</b> − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.</li>
+                <li><b>Scalable</b> − Python provides a better structure and support for large programs than shell scripting.</li>
+            </ul>
+            <h6>Audience</h6>
+            <p>This <b>Python tutorial</b> is designed for software programmers who need to learn Python programming language from scratch.</p>
+            <h6>Prerequisites</h6>
+            <p>You should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages is a plus.</p>
+        </div>
+
+
+        <div id='page2' class="container col-md-9 offset-md-1" style='display:none'>
+            <h4 id='heading'>Python - Overview</h4>
+            <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+             <ul>
+               <li><b>Python is Interpreted</b> − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</li>
+               <li><b>Python is Interactive</b> − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+               <li><b>Python is Object-Oriented</b> − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li>
+               <li><b>Python is a Beginner's Language</b> − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</li>
+             </ul>
+             <h6>History of Python</h6>
+             <p>Python was developed by Guido van Rossum in the late eighties and early nineties at the National Research Institute for Mathematics and Computer Science in the Netherlands.
+ 
+               Python is derived from many other languages, including ABC, Modula-3, C, C++, Algol-68, SmallTalk, and Unix shell and other scripting languages.
+               
+               Python is copyrighted. Like Perl, Python source code is now available under the GNU General Public License (GPL).
+               
+               Python is now maintained by a core development team at the institute, although Guido van Rossum still holds a vital role in directing its progress.</p>
+             <h6>Python Features</h6>
+               <h6>Python's features include −</h6>
+               <ul>
+                    <li>Easy-to-learn − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</li>
+                     <li>Easy-to-read − Python code is more clearly defined and visible to the eyes.</li>
+                     <li>Easy-to-maintain − Python's source code is fairly easy-to-maintain.</li>
+                     <li>A broad standard library − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.</li>
+                     <li>Interactive Mode − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.</li>
+                     <li>Portable − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</li>
+                     <li>Extendable − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.</li>
+                     <li>Databases − Python provides interfaces to all major commercial databases.</li>
+                     <li>GUI Programming − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.</li>
+                     <li>Scalable − Python provides a better structure and support for large programs than shell scripting.</li>
+                </ul>
+               <h6>Apart from the above-mentioned features, Python has a big list of good features, few are listed below −</h6>
+                 <ul>
+                     <li>It supports functional and structured programming methods as well as OOP.</li>
+                     <li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+                     <li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+                     <li>It supports automatic garbage collection.</li>
+                     <li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+                 </ul>
+           </div>
+
+           <div id='page4' class="container col-md-9 offset-md-1" style='display:none'>
+                    <h4 id='heading'>Python - Variables</h4>
+                    <h6>Python Variables</h6>
+                    <p>Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
+                        In Python, we don't need to specify the type of variable because Python is a infer language and smart enough to get variable type.     
+                        Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.</p>
+                    <p>It is recommended to use lowercase letters for the variable name. Rahul and rahul both are two different variables.</p>
+                    <h6>Identifier Naming</h6>
+                    <p>Variables are the example of identifiers. An Identifier is used to identify the literals used in the program. The rules to name an identifier are given below.</p>
+                    <ul>
+                        <li>The first character of the variable must be an alphabet or underscore ( _ ).</li>
+                        <li>All the characters except the first character may be an alphabet of lower-case(a-z), upper-case (A-Z), underscore, or digit (0-9).</li>
+                        <li>Identifier name must not contain any white-space, or special character (!, @, #, %, ^, &, *).</li>
+                        <li>Identifier name must not be similar to any keyword defined in the language.</li>
+                        <li>Identifier names are case sensitive; for example, my name, and MyName is not the same.</li>
+                        <li>Examples of valid identifiers: a123, _n, n_9, etc.</li>
+                        <li>Examples of invalid identifiers: 1a, n%4, n 9, etc.</li>
+                    </ul>
+                    <h6>Declaring Variable and Assigning Values</h6>
+                    <p>Python does not bind us to declare a variable before using it in the application. It allows us to create a variable at the required time.
+                        We don't need to declare explicitly variable in Python. When we assign any value to the variable, that variable is declared automatically.
+                        The equal (=) operator is used to assign value to a variable.</p>
+
+
+
+
+
+
+
+
+
+            </div>  
+        
+        <div  class="pagination">
+            <a href="#" id='left' onclick='prev()'><i class="far fa-hand-point-left fa-2x"></i></a>
+            <a href="#" id='right'><i onclick='next()' class="far fa-hand-point-right fa-2x"></i></a>
+        </div>
+
+        <i id='up_arrow' onclick='Top()' class="far fa-arrow-alt-circle-up "></i>
+    </div>
+    <footer>
+        <div class='text-center' >
+            <i id='study' class="fas fa-graduation-cap fa-2x" style='color:white'></i>
+        </div>
+
+    </footer>
+    <script>
+        var btn=document.getElementById('up_arrow');
+        window.onscroll=function(){scrollFunction()};
+
+    function scrollFunction(){
+        if(document.body.scrollTop>100 || document.documentElement.scrollTop>100){
+            btn.style.display='block';
+        }else{
+            btn.style.display='none';
+         }
+        }
+        function Top(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+</body>
+</html>
